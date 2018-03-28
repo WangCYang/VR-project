@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\myscript\moveself.js">
     <Files>
       <File FileName="Assets\myscript\FollowTarget.cs" Line="1" Column="1" />
-      <File FileName="Assets\myscript\moveself.js" Line="31" Column="45" />
+      <File FileName="Assets\myscript\moveself.js" Line="37" Column="29" />
       <File FileName="Assets\myscript\rotateself.js" Line="1" Column="15" />
       <File FileName="..\first\Assets\my scripts\MousePick.js" Line="1" Column="1" />
       <File FileName="..\first\Assets\my scripts\GameManager.js" Line="1" Column="1" />
