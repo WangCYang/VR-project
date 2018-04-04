@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: b1d40b43367d5344caa8ccf41bb73823
+timeCreated: 1522413068
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ArchM73_10_02
+    100002: ArchM73_10_03
+    100004: ArchM73_10_04
+    100006: ArchM73_10_06
+    100008: ArchM73_10_07
+    100010: ArchM73_10_08
+    100012: ArchM73_10_09
+    100014: ArchM73_10_10
+    100016: ArchM73_10_11
+    100018: ArchM73_10_12
+    100020: ArchM73_10_13
+    100022: ArchM73_10_14
+    100024: ArchM73_10_15
+    100026: ArchM73_10_16
+    100028: body
+    100030: propeller
+    100032: scull
+    100034: //RootNode
+    400000: ArchM73_10_02
+    400002: ArchM73_10_03
+    400004: ArchM73_10_04
+    400006: ArchM73_10_06
+    400008: ArchM73_10_07
+    400010: ArchM73_10_08
+    400012: ArchM73_10_09
+    400014: ArchM73_10_10
+    400016: ArchM73_10_11
+    400018: ArchM73_10_12
+    400020: ArchM73_10_13
+    400022: ArchM73_10_14
+    400024: ArchM73_10_15
+    400026: ArchM73_10_16
+    400028: body
+    400030: propeller
+    400032: scull
+    400034: //RootNode
+    2300000: ArchM73_10_02
+    2300002: ArchM73_10_03
+    2300004: ArchM73_10_04
+    2300006: ArchM73_10_06
+    2300008: ArchM73_10_07
+    2300010: ArchM73_10_08
+    2300012: ArchM73_10_09
+    2300014: ArchM73_10_10
+    2300016: ArchM73_10_11
+    2300018: ArchM73_10_12
+    2300020: ArchM73_10_13
+    2300022: ArchM73_10_14
+    2300024: ArchM73_10_15
+    2300026: ArchM73_10_16
+    2300028: propeller
+    2300030: scull
+    3300000: ArchM73_10_02
+    3300002: ArchM73_10_03
+    3300004: ArchM73_10_04
+    3300006: ArchM73_10_06
+    3300008: ArchM73_10_07
+    3300010: ArchM73_10_08
+    3300012: ArchM73_10_09
+    3300014: ArchM73_10_10
+    3300016: ArchM73_10_11
+    3300018: ArchM73_10_12
+    3300020: ArchM73_10_13
+    3300022: ArchM73_10_14
+    3300024: ArchM73_10_15
+    3300026: ArchM73_10_16
+    3300028: propeller
+    3300030: scull
+    4300000: scull
+    4300002: propeller
+    4300004: ArchM73_10_11
+    4300006: ArchM73_10_12
+    4300008: ArchM73_10_13
+    4300010: ArchM73_10_14
+    4300012: ArchM73_10_16
+    4300014: ArchM73_10_15
+    4300016: ArchM73_10_10
+    4300018: ArchM73_10_09
+    4300020: ArchM73_10_08
+    4300022: ArchM73_10_07
+    4300024: ArchM73_10_06
+    4300026: ArchM73_10_04
+    4300028: ArchM73_10_03
+    4300030: ArchM73_10_02
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.001
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

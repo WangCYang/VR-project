@@ -52,9 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\myscript\collisiondetect.js" />
+     <Compile Include="Assets\myscript\finalmove.js" />
+     <Compile Include="Assets\myscript\ForceControl.js" />
      <Compile Include="Assets\myscript\moveself.js" />
      <Compile Include="Assets\myscript\rotateself.js" />
      <Compile Include="Assets\myscript\settingofplane.js" />
+     <Compile Include="Assets\myscript\towardsplane.js" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

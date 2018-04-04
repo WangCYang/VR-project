@@ -1,22 +1,32 @@
-﻿#pragma strict
+//#pragma strict
 
-public var g:float=10;
 public var a:float=10;///动力
 public var backa:float=10;
 public var fa:float=2;//动摩擦因素为0.2 g*0.2;
 
-public var ra:float=90;//角速度
+public var ra:float=90;//平转速度
 
-public var speed:float=0;//速度大小
+public var speed:float=0;//速度
 //public var dir:Quaternion=transform.rotation;
 public var maxspeed:float=80;//限速
 public var minspeed:float=-30;
 public var ds:float=0;
+public var g:float=-9.8;
+public var fallspeed:float=0;
+private var headupspeed:float=60;//抬头速度
+private var turnspeed:float=60;//侧转速度
+
+private var freezes:Array=new Array(RigidbodyConstraints.FreezePositionX,RigidbodyConstraints.FreezePositionY,RigidbodyConstraints.FreezePositionZ,
+                              RigidbodyConstraints.FreezeRotationX,RigidbodyConstraints.FreezeRotationY,RigidbodyConstraints.FreezeRotationZ,RigidbodyConstraints.None);
+
+public var state:String;
 function Start () {
-	
+     //GetComponent.<Rigidbody>().centerOfMass=new Vector3(0,0,200);//设置质心
+     state="run";
 }
 
 function FixedUpdate () {
+    GetComponent.<Rigidbody>().velocity=new Vector3(0,0,0);
 	//transform.Translate(new Vector3(0,dx,0));
 	//Translate(0,3*Time.deltaTime,0)
 	//transform.up transform.right transform.forward 物体自身的x，y，z轴的世界坐标向量
@@ -60,15 +70,26 @@ function FixedUpdate () {
 	}
 
 	speed=newspeed;
+	headup();
+	turn();
+	checkfly();
 
-
+	var moveDirection = transform.forward;//获取自身的z轴的方向
+    //transform.Translate(moveDirection*speed*Time.fixedDeltaTime,Space.World);//0,0,speed*Time.deltaTime);
+    //transform.Translate(moveDirection*speed*Time.fixedDeltaTime,Space.World);//0,0,speed*Time.deltaTime);
+	if(state=="fly"){//在飞行体系中会计算重力
+	    //fallspeed+=g*Time.fixedDeltaTime;
+	    //transform.Translate(0,fallspeed*Time.fixedDeltaTime,0,Space.World);
+	}
     //V.normalized 单位化向量
     //if(Quaternion.Angle (dir,transform.rotation)>10){
      //  dir=dir+(transform.rotation.normalized-dir)/2;
    // }
-    transform.Translate(0,0,speed*Time.fixedDeltaTime);//0,0,speed*Time.deltaTime);//z方向为机头方向，transform适合静态物体运动
+    //transform.Translate(0,0,speed*Time.fixedDeltaTime);//0,0,speed*Time.deltaTime);//z方向为机头方向，transform适合静态物体运动
      //gameObject.GetComponent.<Rigidbody>().velocity = Vector3.forward * speed*Time.fixedDeltaTime;
       //GetComponent.<Rigidbody>().MovePosition(GetComponent.<Rigidbody>().position + Vector3.forward*speed*Time.deltaTime); //基于世界坐标
+
+      //print(moveDirection);
 }
 
 function clearspeed(){
@@ -76,4 +97,32 @@ function clearspeed(){
  }
  function speedreverse(){
    speed*=-0.5;
+ }
+ function headup(){//抬头
+   if(Input.GetKey("u")&&speed>30){ 
+      transform.Rotate(new Vector3(headupspeed*(-1),0,0)*Time.fixedDeltaTime);
+   }
+   if(Input.GetKey("j")){ 
+      transform.Rotate(new Vector3(headupspeed,0,0)*Time.fixedDeltaTime);
+   }
+ }
+ function turn(){
+    if(Input.GetKey("h")){ 
+      transform.Rotate(new Vector3(0,0,turnspeed)*Time.fixedDeltaTime);
+   }
+   if(Input.GetKey("k")){ 
+      transform.Rotate(new Vector3(0,0,turnspeed*(-1))*Time.fixedDeltaTime);
+   }
+ }
+ function checkfly(){
+    if(transform.position.y>3&&state=="run"){
+       fly();
+    }
+ }
+ function run(){
+    state="run";
+    fallspeed=0;//停止下落
+ }
+ function fly(){
+    state="fly";
  }
