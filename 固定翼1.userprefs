@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\myscript\collisiondetect.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\myscript\finalmove.js">
     <Files>
       <File FileName="Assets\myscript\FollowTarget.cs" Line="1" Column="1" />
       <File FileName="Assets\myscript\moveself.js" Line="1" Column="1" />
@@ -10,11 +10,11 @@
       <File FileName="..\first\Assets\my scripts\firstmove.js" Line="1" Column="1" />
       <File FileName="..\first\Assets\my scripts\firstrotate.js" Line="1" Column="1" />
       <File FileName="..\first\Assets\my scripts\trigger.js" Line="1" Column="1" />
-      <File FileName="Assets\myscript\collisiondetect.js" Line="27" Column="12" />
+      <File FileName="Assets\myscript\collisiondetect.js" Line="1" Column="1" />
       <File FileName="..\first\Assets\my scripts\TwoAnimation.js" Line="1" Column="1" />
-      <File FileName="Assets\myscript\ForceControl.js" Line="21" Column="42" />
-      <File FileName="Assets\myscript\towardsplane.js" Line="14" Column="2" />
-      <File FileName="Assets\myscript\finalmove.js" Line="25" Column="1" />
+      <File FileName="Assets\myscript\ForceControl.js" Line="1" Column="1" />
+      <File FileName="Assets\myscript\towardsplane.js" Line="1" Column="1" />
+      <File FileName="Assets\myscript\finalmove.js" Line="36" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
